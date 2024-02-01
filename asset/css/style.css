@@ -1,0 +1,69 @@
+.class1 {
+  background: linear-gradient(to right, gray, black);
+}
+body {
+  margin: 0;
+}
+
+div img {
+  max-width: 100px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 8px;
+
+  /* Animation */
+  transform: rotate(0deg);
+  animation: rotateImage 1s ease-in-out forwards;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.titre2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-bottom: 65px;
+
+  /* Animation */
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.liens {
+  width: 55px;
+
+}
+.liens a {
+  border: 2px solid black;
+  font-size: 30px;
+
+
+  
+}
+a {
+  text-decoration: none;
+    
+
+ 
+}
