@@ -3,6 +3,12 @@
 }
 body {
   margin: 0;
+  background-image: url(../img/plumbing-tools-fittings-on-blue-260nw-1422258710.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 1000px;
 }
 
 div img {
@@ -51,19 +57,14 @@ div img {
 }
 
 .liens {
-  width: 55px;
-
+  /* width: 55px; */
+  text-align: center;
 }
 .liens a {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   font-size: 30px;
-
-
-  
+  margin: 0 10px;
 }
 a {
   text-decoration: none;
-    
-
- 
 }
