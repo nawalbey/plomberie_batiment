@@ -3,7 +3,6 @@
 }
 body {
   margin: 0;
-  background-image: url(../img/plumbing-tools-fittings-on-blue-260nw-1422258710.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,11 +10,34 @@ body {
   min-height: 1000px;
 }
 
-div img {
-  max-width: 100px;
-  height: auto;
+.width-25 {
+  width: 25%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+nav {
+  height: 300px;
+}
+
+.nav_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo_entreprise {
+  display: flex;
+  justify-content: center;
+}
+
+.adresse img {
+  max-width: 50px;
+  height: 50px;
   border: 2px solid black;
   border-radius: 8px;
+  margin: 20px auto 0 auto;
 
   /* Animation */
   transform: rotate(0deg);
@@ -35,12 +57,12 @@ div img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100px;
+  text-align: center;
+  height: 300px;
+  width: 100%;
   color: white;
   text-transform: uppercase;
   text-decoration: underline;
-  padding-bottom: 65px;
 
   /* Animation */
   opacity: 0;
@@ -57,14 +79,80 @@ div img {
 }
 
 .liens {
-  /* width: 55px; */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
 .liens a {
-  /* border: 2px solid black; */
   font-size: 30px;
-  margin: 0 10px;
+  margin: 0 0 0 30px;
 }
 a {
   text-decoration: none;
+}
+
+.adresse {
+  border: 3px solid black;
+}
+
+.adresse h2 {
+  text-align: center;
+}
+
+.coordonnées {
+  display: flex;
+  align-items: center;
+}
+
+.coordonnées p {
+  margin-bottom: 0;
+}
+
+.coordonnées i {
+  margin: 0 5px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour le contenu de la carte */
+.card-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content img {
+  width: 100%;
+  height: 200px;
+}
+
+.card-content a {
+  margin-top: 50px;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  text-decoration: underline;
+  border-radius: 15px;
+  font-size: 19px;
+}
+
+/* Styles pour le titre de la carte */
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Styles pour le texte de la carte */
+.card-text {
+  color: #555;
 }
