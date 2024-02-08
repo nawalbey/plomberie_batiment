@@ -1,5 +1,5 @@
 .class1 {
-  background: linear-gradient(to right, gray, black);
+  background: linear-gradient(to right, #3498db, #2c3e50); /* Dégradé de bleu */
 }
 body {
   margin: 0;
@@ -119,6 +119,10 @@ a {
   height: 200px;
 }
 
+.card:nth-child(2) .card-content h2 {
+  margin-top: 0;
+}
+
 .card-content a {
   margin-top: 50px;
   padding: 20px;
@@ -132,16 +136,23 @@ a {
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
-}
-
-.card-text {
-  color: #555;
+  text-transform: uppercase;
 }
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1200px;
   justify-content: space-around;
-  margin-top: 55px;
+  margin: 55px auto 0 auto;
+}
+
+.flex .card:nth-child(4){
+  margin-left: 200px;
+}
+.flex .card:nth-child(5){
+  margin-right: 200px;
 }
 
 .image_entreprise img {
