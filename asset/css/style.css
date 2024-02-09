@@ -1,6 +1,8 @@
 .class1 {
-  background: linear-gradient(to right, #3498db, #2c3e50); /* Dégradé de bleu */
+  background: linear-gradient(to right, #858d94, #27307c);
+  /* Dégradé de bleu */
 }
+ 
 body {
   margin: 0;
   background-repeat: no-repeat;
@@ -9,47 +11,48 @@ body {
   width: 100%;
   min-height: 1000px;
 }
-
+ 
 .width-25 {
   width: 25%;
 }
-
+ 
 .width-50 {
   width: 50%;
 }
-
+ 
 .nav_div {
   display: flex;
   justify-content: space-between;
   height: 300px;
 }
-
+ 
 #logo_entreprise {
   display: flex;
   justify-content: center;
 }
-
+ 
 #logo_entreprise img {
   max-width: 50px;
   height: 50px;
   border: 2px solid black;
   border-radius: 8px;
   margin: 20px auto 0 auto;
-
+ 
   /* Animation */
   transform: rotate(0deg);
   animation: rotateImage 1s ease-in-out forwards;
 }
-
+ 
 @keyframes rotateImage {
   from {
     transform: rotate(0deg);
   }
+ 
   to {
     transform: rotate(360deg);
   }
 }
-
+ 
 .titre2 {
   display: flex;
   flex-direction: column;
@@ -61,51 +64,56 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
 }
-
+ 
 .liens {
   display: flex;
   justify-content: center;
   background-color: white;
   margin-top: 25px;
 }
+ 
 .liens a {
   font-size: 30px;
   margin: 0 0 0 30px;
 }
+ 
 a {
   text-decoration: none;
 }
-
+ 
 .adresse {
   border: 3px solid black;
 }
-
+ 
 .adresse h2 {
   text-align: center;
 }
-
+ 
 .coordonnées {
   display: flex;
   align-items: center;
 }
-
+ 
 .coordonnées p {
   margin-bottom: 0;
 }
-
+ 
 .coordonnées i {
   margin: 0 5px;
 }
-
+ 
 .card {
+  animation: forwards;
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
   margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  box-shadow: inset 30px 30px 60px grey;
+ 
 }
-
+ 
 .card-content {
   display: flex;
   flex-direction: column;
@@ -113,16 +121,16 @@ a {
   padding: 20px;
   text-align: center;
 }
-
+ 
 .card-content img {
   width: 100%;
   height: 200px;
 }
-
+ 
 .card:nth-child(2) .card-content h2 {
   margin-top: 0;
 }
-
+ 
 .card-content a {
   margin-top: 50px;
   padding: 20px;
@@ -132,13 +140,13 @@ a {
   border-radius: 15px;
   font-size: 19px;
 }
-
+ 
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
+ 
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -147,23 +155,24 @@ a {
   justify-content: space-around;
   margin: 55px auto 0 auto;
 }
-
-.flex .card:nth-child(4){
+ 
+.flex .card:nth-child(4) {
   margin-left: 200px;
 }
-.flex .card:nth-child(5){
+ 
+.flex .card:nth-child(5) {
   margin-right: 200px;
 }
-
+ 
 .image_entreprise img {
   height: 100%;
   width: 100%;
 }
-
+ 
 .icone {
   display: flex;
 }
-
+ 
 div.icone {
   height: 300px;
 }
