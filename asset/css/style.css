@@ -2,7 +2,7 @@
   background: linear-gradient(to right, #858d94, #27307c);
   /* Dégradé de bleu */
 }
- 
+
 body {
   margin: 0;
   background-repeat: no-repeat;
@@ -10,49 +10,57 @@ body {
   background-size: cover;
   width: 100%;
   min-height: 1000px;
+  
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
 }
- 
+
+
 .width-25 {
   width: 25%;
 }
- 
+
 .width-50 {
   width: 50%;
 }
- 
+
 .nav_div {
   display: flex;
   justify-content: space-between;
   height: 300px;
 }
- 
+
 #logo_entreprise {
   display: flex;
   justify-content: center;
 }
- 
+
 #logo_entreprise img {
   max-width: 50px;
   height: 50px;
   border: 2px solid black;
   border-radius: 8px;
   margin: 20px auto 0 auto;
- 
+
   /* Animation */
   transform: rotate(0deg);
   animation: rotateImage 1s ease-in-out forwards;
 }
- 
+
 @keyframes rotateImage {
   from {
     transform: rotate(0deg);
   }
- 
+
   to {
     transform: rotate(360deg);
   }
 }
- 
+
 .titre2 {
   display: flex;
   flex-direction: column;
@@ -64,44 +72,44 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
 }
- 
+
 .liens {
   display: flex;
   justify-content: center;
   background-color: white;
   margin-top: 25px;
 }
- 
+
 .liens a {
   font-size: 30px;
   margin: 0 0 0 30px;
 }
- 
+
 a {
   text-decoration: none;
 }
- 
+
 .adresse {
   border: 3px solid black;
 }
- 
+
 .adresse h2 {
   text-align: center;
 }
- 
+
 .coordonnées {
   display: flex;
   align-items: center;
 }
- 
+
 .coordonnées p {
   margin-bottom: 0;
 }
- 
+
 .coordonnées i {
   margin: 0 5px;
 }
- 
+
 .card {
   animation: forwards;
   width: 300px;
@@ -109,11 +117,9 @@ a {
   border-radius: 10px;
   overflow: hidden;
   margin: 20px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   box-shadow: inset 30px 30px 60px grey;
- 
 }
- 
+
 .card-content {
   display: flex;
   flex-direction: column;
@@ -121,16 +127,16 @@ a {
   padding: 20px;
   text-align: center;
 }
- 
+
 .card-content img {
   width: 100%;
   height: 200px;
 }
- 
+
 .card:nth-child(2) .card-content h2 {
   margin-top: 0;
 }
- 
+
 .card-content a {
   margin-top: 50px;
   padding: 20px;
@@ -140,13 +146,13 @@ a {
   border-radius: 15px;
   font-size: 19px;
 }
- 
+
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
- 
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -155,24 +161,110 @@ a {
   justify-content: space-around;
   margin: 55px auto 0 auto;
 }
- 
+
 .flex .card:nth-child(4) {
   margin-left: 200px;
 }
- 
+
 .flex .card:nth-child(5) {
   margin-right: 200px;
 }
- 
+
 .image_entreprise img {
   height: 100%;
   width: 100%;
 }
- 
+
 .icone {
   display: flex;
 }
- 
+
 div.icone {
   height: 300px;
+}
+
+
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  margin-top: 50px !important;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  width: 800px;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 80%;
+  height: 50%;
+  background: white;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 5px !important;
+  background: #080808 !important;
+  transition: all 0.5s !important;
+}
+
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #343c80 50%, #FFFFFF 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:6s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
