@@ -10,15 +10,14 @@ body {
   background-size: cover;
   width: 100%;
   min-height: 1000px;
-  
+
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color:#000;
+  color: #000;
   margin: 0;
   padding: 0;
 }
-
 
 .width-25 {
   width: 25%;
@@ -28,9 +27,14 @@ body {
   width: 50%;
 }
 
+nav {
+  width: 100%;
+}
+
 .nav_div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 300px;
 }
 
@@ -40,8 +44,8 @@ body {
 }
 
 #logo_entreprise img {
-  max-width: 50px;
-  height: 50px;
+  max-width: 240px;
+  height: 240px;
   border: 2px solid black;
   border-radius: 8px;
   margin: 20px auto 0 auto;
@@ -71,6 +75,7 @@ body {
   color: white;
   text-transform: uppercase;
   text-decoration: underline;
+  margin-left: 50px;
 }
 
 .liens {
@@ -82,15 +87,10 @@ body {
 
 .liens a {
   font-size: 30px;
-  margin: 0 0 0 30px;
 }
 
 a {
   text-decoration: none;
-}
-
-.adresse {
-  border: 3px solid black;
 }
 
 .adresse h2 {
@@ -113,7 +113,8 @@ a {
 .card {
   animation: forwards;
   width: 300px;
-  border: 1px solid #ccc;
+  height: 410px;
+  border: 1px solid #000000;
   border-radius: 10px;
   overflow: hidden;
   margin: 20px;
@@ -183,9 +184,8 @@ div.icone {
   height: 300px;
 }
 
-
-
-html, body {
+html,
+body {
   position: relative;
   height: 100%;
 }
@@ -193,78 +193,76 @@ body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color:#000;
+  color: #000;
   margin: 0;
   padding: 0;
 }
-.swiper-container {
-  margin-top: 50px !important;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  width: 800px;
-  height: 450px;
-  border-radius: 20px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.item {
-  width: 80%;
-  height: 50%;
-  background: white;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  border-radius: 8px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-  }
-}
-
-.swiper-pagination-bullet {
-  width: 12px !important;
-  height: 12px !important;
-  border-radius: 5px !important;
-  background: #080808 !important;
-  transition: all 0.5s !important;
-}
-
 
 .bg {
-  animation:slide 5s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #343c80 50%, #FFFFFF 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #27307c 50%, #858d94 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
 }
 
 .bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
 }
 
 .bg3 {
-  animation-duration:6s;
+  animation-duration: 5s;
 }
 
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 300%; /* 100% * nombre d'items */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  width: 33.33%;
+  box-sizing: border-box;
+  height: 400px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 0 5px;
+  cursor: pointer;
 }
