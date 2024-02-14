@@ -236,18 +236,19 @@ body {
 
 .carousel-wrapper {
   display: flex;
-  width: 300%; /* 100% * nombre d'items */
+  width: 400%; /* 100% * nombre d'items */
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-  width: 33.33%;
+  width: 100%;
   box-sizing: border-box;
-  height: 400px;
+  height: 600px;
 }
 
 .carousel-item img {
-  width: 100%;
+  width: 75%;
+  margin: auto;
   height: 100%;
   display: block;
 }

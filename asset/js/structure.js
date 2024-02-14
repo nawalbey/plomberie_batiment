@@ -5,7 +5,7 @@ const items = document.querySelectorAll(".carousel-item");
 let currentIndex = 0;
 
 function updateCarousel() {
-  carouselWrapper.style.transform = `translateX(${-currentIndex * 33.33}%)`;
+  carouselWrapper.style.transform = `translateX(${-currentIndex * 25}%)`;
 }
 
 function createPaginationDots() {
