@@ -219,6 +219,26 @@ body {
   animation-duration: 5s;
 }
 
+.bg4 {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #f8a26f 50%, #272928 50%);
+  bottom: 0;
+  left: -50%;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg5 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg6 {
+  animation-duration: 5s;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(-25%);
@@ -266,4 +286,51 @@ body {
   background-color: #333;
   margin: 0 5px;
   cursor: pointer;
+}
+
+/* Page avis */
+
+.avis_div {
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.avis_div_img {
+  width: 300px;
+  height: 500px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  margin: 30px 0;
+}
+
+.avis_div_img:hover {
+  scale: 1.5;
+}
+
+.avis_presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    text-align: center;
+    margin-right: 200px;
+  }
+}
+
+.avis_carte {
+  width: 300px;
+  img {
+    width: 100%;
+  }
+}
+
+.titre3{
+  color: white;
+  text-decoration: underline;
 }
