@@ -319,8 +319,14 @@ body {
   align-items: center;
   h1 {
     text-align: center;
-    margin-right: 200px;
+    width: 300px;
   }
+}
+
+.titre-i {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
 }
 
 .avis_carte {
@@ -333,4 +339,31 @@ body {
 .titre3{
   color: white;
   text-decoration: underline;
+}
+
+/* icone */
+
+.yellow {
+  color: yellow;
+}
+
+.blue {
+  color: white;
+}
+
+/* fin */
+
+
+.presentation_entreprise {
+
+  p{
+    margin: 50px 0;
+  }
+  span{
+    text-align: center;
+    background-color: pink;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 25%;
+  }
 }
