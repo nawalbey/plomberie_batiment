@@ -3,6 +3,7 @@
   /* Dégradé de bleu */
 }
 
+/* classe des body */
 body {
   margin: 0;
   background-repeat: no-repeat;
@@ -18,6 +19,58 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.body2 {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 1000px;
+
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.body3 {
+  background-image: url(../img/peinture/appliquer-peinture-au-mur.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* box-shadow inset(l'interieur) pour que l'image soit sombre */
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); */
+}
+
+.body4 {
+  background-image: url(../img/plomberie/AGENGEMENT-DE-SALLE-DE-BAINS-e1557258912942.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.body5 {
+  background-image: url(../img/maconnerie/Made_of_bricks_Wall_Hands_Glove_588461_1280x854.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.body6 {
+  background-image: url(../img/eletricite/ELECTRICITE-FOND-ECRAN-29K.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.body7 {
+  background-image: url(../img/carrelage_parquet/653-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* fin */
 
 .width-25 {
   width: 25%;
@@ -78,6 +131,18 @@ nav {
   margin-left: 50px;
 }
 
+.titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-left: 50px;
+}
 .liens {
   display: flex;
   justify-content: center;
@@ -336,10 +401,11 @@ body {
   }
 }
 
-.titre3{
+.titre3 {
   color: white;
   text-decoration: underline;
 }
+/* fin */
 
 /* icone */
 
@@ -353,17 +419,55 @@ body {
 
 /* fin */
 
-
+/* presenation entreprise et paragraphe */
 .presentation_entreprise {
-
-  p{
+  p {
     margin: 50px 0;
   }
-  span{
+  span {
     text-align: center;
-    background-color: pink;
+    background-color: white;
     padding: 15px;
     margin-right: 20px;
     border-radius: 25%;
   }
 }
+
+.paragraphe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paragraphe p {
+  text-align: left; /* Adjust text alignment if needed */
+}
+/* fin */
+
+ .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0; /* Initial opacity set to 0 */
+        animation: fadeIn 1s ease-in-out forwards; /* Animation applied */
+      }
+
+      /* Style for the images inside the cards */
+      .card img {
+        width: 100%;
+        border-radius: 6px;
+      }
+
+      /* CSS animation for fading in */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
