@@ -148,6 +148,7 @@ nav {
   justify-content: center;
   background-color: white;
   margin-top: 25px;
+ 
 }
 
 .liens a {
@@ -156,12 +157,13 @@ nav {
 
 a {
   text-decoration: none;
+  padding-left: 10px;
 }
 
-.adresse h2 {
-  text-align: center;
+/* classe */
+.adresse {
+  padding-bottom: 25px;
 }
-
 .coordonnées {
   display: flex;
   align-items: center;
@@ -174,7 +176,7 @@ a {
 .coordonnées i {
   margin: 0 5px;
 }
-
+/* fin */
 .card {
   animation: forwards;
   width: 300px;
@@ -240,14 +242,22 @@ a {
   height: 100%;
   width: 100%;
 }
-
+/* classe icone */
 .icone {
   display: flex;
+  justify-content: flex-end;
+}
+
+.icone i {
+  font-size: 30px; /* Ajustez la taille de la police selon vos besoins */
+  margin: 10px; /* Ajoutez une marge si nécessaire */
 }
 
 div.icone {
   height: 300px;
 }
+/* fin */
+
 
 html,
 body {
@@ -261,6 +271,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 .bg {
@@ -446,28 +457,22 @@ body {
 }
 /* fin */
 
- .card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        margin: 10px;
-        padding: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        opacity: 0; /* Initial opacity set to 0 */
-        animation: fadeIn 1s ease-in-out forwards; /* Animation applied */
-      }
+/* plomberie exemple img */
+.image div {
+  width: 300px;
+  img {
+    width: 100%;
+  }
+}
+.image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 50px;
+  filter: brightness(120%);
+}
 
-      /* Style for the images inside the cards */
-      .card img {
-        width: 100%;
-        border-radius: 6px;
-      }
-
-      /* CSS animation for fading in */
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
+section.flex {
+  display: flex;
+}
+/* fin */
