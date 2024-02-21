@@ -1,7 +1,9 @@
+/* class1 batiment_plomberie */
 .class1 {
   background: linear-gradient(to right, #858d94, #27307c);
   /* Dégradé de bleu */
 }
+/* fin */
 
 /* classe des body */
 body {
@@ -70,8 +72,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
 /* fin */
 
+/* classe des width */
 .width-25 {
   width: 25%;
 }
@@ -83,14 +101,18 @@ body {
 nav {
   width: 100%;
 }
+/* fin */
 
+/* classe nav */
 .nav_div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 300px;
 }
+/* fin */
 
+/* id logo */
 #logo_entreprise {
   display: flex;
   justify-content: center;
@@ -117,7 +139,9 @@ nav {
     transform: rotate(360deg);
   }
 }
+/* fin */
 
+/* classe des titre */
 .titre2 {
   display: flex;
   flex-direction: column;
@@ -143,12 +167,25 @@ nav {
   text-decoration: underline;
   margin-left: 50px;
 }
+
+.titre3 {
+  color: white;
+  text-decoration: underline;
+}
+
+.titre-i {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+/* fin */
+
+/* classe des liens */
 .liens {
   display: flex;
   justify-content: center;
   background-color: white;
   margin-top: 25px;
- 
 }
 
 .liens a {
@@ -159,8 +196,9 @@ a {
   text-decoration: none;
   padding-left: 10px;
 }
+/* fin */
 
-/* classe */
+/* classe adresse coordonnees*/
 .adresse {
   padding-bottom: 25px;
 }
@@ -177,6 +215,8 @@ a {
   margin: 0 5px;
 }
 /* fin */
+
+/* classe des card */
 .card {
   animation: forwards;
   width: 300px;
@@ -242,6 +282,8 @@ a {
   height: 100%;
   width: 100%;
 }
+/* fin */
+
 /* classe icone */
 .icone {
   display: flex;
@@ -249,8 +291,8 @@ a {
 }
 
 .icone i {
-  font-size: 30px; /* Ajustez la taille de la police selon vos besoins */
-  margin: 10px; /* Ajoutez une marge si nécessaire */
+  font-size: 30px;
+  margin: 10px; 
 }
 
 div.icone {
@@ -258,22 +300,7 @@ div.icone {
 }
 /* fin */
 
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
+/* classe des bg pour l'animation */
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #27307c 50%, #858d94 50%);
@@ -323,7 +350,9 @@ body {
     transform: translateX(25%);
   }
 }
+/* fin */
 
+/* carousel */
 .carousel-container {
   overflow: hidden;
   width: 50%;
@@ -363,9 +392,9 @@ body {
   margin: 0 5px;
   cursor: pointer;
 }
+/* fin */
 
 /* Page avis */
-
 .avis_div {
   display: flex;
   width: 1000px;
@@ -399,27 +428,15 @@ body {
   }
 }
 
-.titre-i {
-  display: flex;
-  align-items: center;
-  margin-left: 200px;
-}
-
 .avis_carte {
   width: 300px;
   img {
     width: 100%;
   }
 }
-
-.titre3 {
-  color: white;
-  text-decoration: underline;
-}
 /* fin */
 
 /* icone */
-
 .yellow {
   color: yellow;
 }
@@ -427,7 +444,6 @@ body {
 .blue {
   color: white;
 }
-
 /* fin */
 
 /* presenation entreprise et paragraphe */
@@ -453,7 +469,7 @@ body {
 }
 
 .paragraphe p {
-  text-align: left; /* Adjust text alignment if needed */
+  text-align: left;
 }
 /* fin */
 
