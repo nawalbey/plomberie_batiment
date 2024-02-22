@@ -1,19 +1,21 @@
-/* class1 batiment_plomberie */
+/* class1 header batiment_plomberie */
 .class1 {
   background: linear-gradient(to right, #858d94, #27307c);
-  /* Dégradé de bleu */
+  /* Dégradé de bleu gris*/
 }
 /* fin */
 
-/* classe des body */
-body {
+/* body1 avis */
+.body1 {
+  background: #eee;
+}
+/* fin */
+
+/* body */
+.body {
   margin: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 100%;
   min-height: 1000px;
-
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -21,71 +23,17 @@ body {
   margin: 0;
   padding: 0;
 }
+/* fin */
 
-.body2 {
-  margin: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  min-height: 1000px;
-
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.body3 {
-  background-image: url(../img/peinture/appliquer-peinture-au-mur.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* box-shadow inset(l'interieur) pour que l'image soit sombre */
-  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); */
-}
-
-.body4 {
-  background-image: url(../img/plomberie/AGENGEMENT-DE-SALLE-DE-BAINS-e1557258912942.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.body5 {
-  background-image: url(../img/maconnerie/Made_of_bricks_Wall_Hands_Glove_588461_1280x854.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-}
-.body6 {
-  background-image: url(../img/eletricite/ELECTRICITE-FOND-ECRAN-29K.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.body7 {
-  background-image: url(../img/carrelage_parquet/653-1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
+/* body html batiment plomberie */
 html,
 body {
   position: relative;
   height: 100%;
 }
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 /* fin */
 
@@ -112,7 +60,7 @@ nav {
 }
 /* fin */
 
-/* id logo */
+/* id logo entreprise*/
 #logo_entreprise {
   display: flex;
   justify-content: center;
@@ -178,30 +126,49 @@ nav {
   align-items: center;
   margin-left: 200px;
 }
+.titre4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* fin */
 
 /* classe des liens */
 .liens {
   display: flex;
   justify-content: center;
-  background-color: white;
   margin-top: 25px;
 }
 
 .liens a {
   font-size: 30px;
+  color: white;
 }
 
+.apropos {
+  font-size: 20px;
+  text-align: center;
+}
+.apropos a {
+  color: black;
+}
 a {
-  text-decoration: none;
-  padding-left: 10px;
+  padding-bottom: 15px;
 }
 /* fin */
 
-/* classe adresse coordonnees*/
-.adresse {
-  padding-bottom: 25px;
+/* footer classe adresse coordonnees*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid black;
 }
+
 .coordonnées {
   display: flex;
   align-items: center;
@@ -215,6 +182,17 @@ a {
   margin: 0 5px;
 }
 /* fin */
+
+/* classe icone */
+.icone {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icone i {
+  font-size: 30px;
+  margin: 5px;
+}
 
 /* classe des card */
 .card {
@@ -260,14 +238,13 @@ a {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
+/* classe flex exemple_plomberie */
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 1200px;
+  width: 1000px;
   justify-content: space-around;
-  margin: 55px auto 0 auto;
+  margin: 25px auto;
 }
 
 .flex .card:nth-child(4) {
@@ -278,25 +255,10 @@ a {
   margin-right: 200px;
 }
 
+/* pour la nav logo et l'imagine prend 100% */
 .image_entreprise img {
   height: 100%;
   width: 100%;
-}
-/* fin */
-
-/* classe icone */
-.icone {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.icone i {
-  font-size: 30px;
-  margin: 10px; 
-}
-
-div.icone {
-  height: 300px;
 }
 /* fin */
 
@@ -372,7 +334,7 @@ div.icone {
 }
 
 .carousel-item img {
-  width: 75%;
+  width: 65%;
   margin: auto;
   height: 100%;
   display: block;
@@ -394,7 +356,7 @@ div.icone {
 }
 /* fin */
 
-/* Page avis */
+/* Page html avis */
 .avis_div {
   display: flex;
   width: 1000px;
@@ -436,7 +398,7 @@ div.icone {
 }
 /* fin */
 
-/* icone */
+/*  html avis icone etoile */
 .yellow {
   color: yellow;
 }
@@ -473,22 +435,25 @@ div.icone {
 }
 /* fin */
 
-/* plomberie exemple img */
-.image div {
-  width: 300px;
+/* html plomberie_exemple img */
+.image div>div {
+  width: 400px;
+  height: 400px;
   img {
     width: 100%;
+    height: 100%;
   }
 }
 .image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding-bottom: 50px;
   filter: brightness(120%);
 }
-
-section.flex {
-  display: flex;
-}
 /* fin */
+
+/* classe bordure */
+.bordure {
+  margin-top: 25px;
+  border: solid 1px black;
+  border-radius: 15px; /* Ajustez la valeur selon vos besoins pour définir le rayon de l'arrondi */
+  background-color: #eee;
+}
