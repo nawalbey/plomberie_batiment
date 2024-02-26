@@ -159,12 +159,10 @@ nav {
 .apropos {
   font-size: 20px;
   text-align: center;
+  margin-top: 20px;
 }
 .apropos a {
   color: black;
-}
-a {
-  padding-bottom: 15px;
 }
 /* fin */
 
@@ -185,7 +183,7 @@ footer {
 }
 
 .coordonnées p {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .coordonnées i {
@@ -202,6 +200,7 @@ footer {
 .icone i {
   font-size: 30px;
   margin: 5px;
+  color: #27307c;
 }
 
 /* classe des card */
@@ -258,6 +257,10 @@ footer {
 }
 
 /* pour la nav logo et l'imagine prend 100% */
+
+.image_entreprise {
+  height: 100%;
+}
 .image_entreprise img {
   height: 100%;
   width: 100%;
@@ -469,6 +472,8 @@ span {
   border: solid 1px black;
   border-radius: 15px; /* Ajustez la valeur selon vos besoins pour définir le rayon de l'arrondi */
   background-color: #d3d3d3;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .paragraphe > div {
@@ -482,17 +487,61 @@ span {
 .ulli ul {
   margin: 0;
   display: flex;
+  justify-content: space-around;
 }
 
-.ulli li {
-  justify-content: center;
-}
 ul li {
   list-style: none;
-  display: table-cell;
+  margin: 10px;
 }
-li a {
-  color: black;
+
+.ulli ul > li:first-child > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.ulli ul > li:nth-child(2) > a {
+  text-decoration: none;
+  color: #0e0e0e;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.ulli ul > li:nth-child(3) > a {
+  text-decoration: none;
+  color: #242424;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.ulli ul > li:nth-child(4) > a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.ulli ul > li:nth-child(5) > a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.ulli ul > li:nth-child(6) > a {
+  text-decoration: none;
+  color: #242424;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.ulli ul > li:nth-child(7) > a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.ulli ul > li:nth-child(8) > a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 /* fin */
